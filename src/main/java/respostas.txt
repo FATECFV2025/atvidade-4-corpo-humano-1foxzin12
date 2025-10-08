@@ -1,0 +1,18 @@
+Atividade de Modificadores de Acesso e Métodos Getters/Setters
+
+Questões:
+
+1. O que aconteceu quando incluímos a linha `c1.massa = "2"`; após instanciar o objeto `c1`?
+   - Ocorrência: O código falha porque estamos tentando atribuir uma string a uma variável do tipo `float`, o que resulta em erro de compilação.
+   - Conclusão: Sempre use o tipo correto para os atributos. Isso demonstra a importância de verificar os tipos de dados.
+
+2. O que aconteceu quando alteramos `private float Massa` para `public float Massa`?**
+   - Ocorrência: O atributo `massa` passou a ser acessível diretamente fora da classe.
+   - Conclusão: Quebramos o encapsulamento, o que não é recomendado em boas práticas de programação orientada a objetos.
+
+3. O que aconteceu quando alteramos o `setVolume` para `private`?**
+   - Ocorrência: O método não pode ser mais chamado fora da classe.
+   - Conclusão: Restringir o acesso direto a atributos e métodos é uma boa prática para proteger a integridade dos dados.
+
+4. Desafio Extra:
+   - Implementação do IMC: O cálculo do IMC foi implementado com sucesso na classe CorpoHumano. O IMC é calculado com a fórmula `Massa / Altura^2`.
